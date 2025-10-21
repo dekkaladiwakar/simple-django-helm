@@ -1,0 +1,21 @@
+# Development environment values
+replicaCount: 1
+
+image:
+  tag: "v1.0.0"
+
+env:
+  - name: APP_VERSION
+    value: "1.0.0"
+  - name: ENVIRONMENT
+    value: "development"
+  - name: DEBUG
+    value: "True"
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi

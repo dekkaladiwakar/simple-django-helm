@@ -1,0 +1,21 @@
+# Staging environment values
+replicaCount: 2
+
+image:
+  tag: "v1.0.0"
+
+env:
+  - name: APP_VERSION
+    value: "1.0.0"
+  - name: ENVIRONMENT
+    value: "staging"
+  - name: DEBUG
+    value: "False"
+
+resources:
+  limits:
+    cpu: 300m
+    memory: 384Mi
+  requests:
+    cpu: 150m
+    memory: 192Mi
